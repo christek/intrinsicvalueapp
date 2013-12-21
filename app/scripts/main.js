@@ -23,14 +23,11 @@ var divsum = parseFloat($('#div1').html()) +
 
 $('#divsum').html(divsum);
 
-var totalcash = bookvaluediff + divsum
-$('#totalcash').html(totalcash);
+
 
 
 var cbv = parseFloat($('#bookvalue2').html());
-console.log(cbv)
 var obv = parseFloat($('#bookvalue1').html());
-console.log(obv)
 var years = 9;
 
 var upper = 1 / years;
@@ -39,6 +36,34 @@ var a = Math.pow(base, upper);
 var bookvaluediff = 100 * (a - 1);
 
 $('#bookvaluediff').html(bookvaluediff.toFixed(3));
+
+
+var totalCash = parseFloat($('#div9').html());
+$('#totalcash').html(totalCash);
+
+var year=10;
+var r=1.71; // update this
+var bvc=bookvaluediff.toFixed(3)
+
+var perc=(1+bvc/100);
+
+var base=Math.pow(perc,year);
+
+var parr=cbv*base;
+
+
+var r=r/100;
+
+extra=Math.pow((1+r),year);
+
+
+
+var c = totalCash*(1-(1/extra))/r+parr/extra;
+
+
+$('#intrinsicValue').html(c);
+
+
 
 
 
