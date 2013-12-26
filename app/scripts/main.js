@@ -49,8 +49,8 @@ var bookvaluedifferencefloat = bookvaluedifference
 $('#bookvaluediff').html(bookvaluedifferencefloat);
 
 
-var totalCash = parseFloat($('#div9').html());
-$('#totalcash').html(totalCash);
+var dividendsForOneYear = parseFloat($('#div9').html());
+$('#totalcash').html(dividendsForOneYear);
 
 var year=10;
 var r=1.71; // update this
@@ -70,21 +70,46 @@ var r=r/100;
 
 extra=Math.pow((1+r),year);
 
-
-
-var c = totalCash*(1-(1/extra))/r+parr/extra;
-
+var c = dividendsForOneYear*(1-(1/extra))/r+parr/extra;
 
 $('#intrinsicValue').html(c.toFixed(2));
 
-console.log(typeof divsum)
-
-//console.log(typeof bookvaluedifferencefloat)
-//console.log(typeof divsum)
 
 
 var total = bookvaluedifferencefloat + divsum;
-$("#totalcashsum").html(total)
+$("#totalcashsum").html(total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+coupon=Number(document.calculator.coupon.value);
+par=Number(document.calculator.par.value);
+year=Number(document.calculator.year.value);
+r=Number(document.calculator.r.value);
+bvc=Number(document.calculator.bvc.value);
+
+perc=(1+bvc/100);
+base=Math.pow(perc,year);
+parr=par*base;
+r=r/100;
+
+extra=Math.pow((1+r),year);
+
+c=coupon*(1-(1/extra))/r+parr/extra;
+
+document.calculator.total.value=c;
+*/
 
 
 
