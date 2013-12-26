@@ -33,9 +33,20 @@ var years = 9;
 var upper = 1 / years;
 var base = cbv / obv;
 var a = Math.pow(base, upper);
-var bookvaluediff = 100 * (a - 1);
+var bookvaluepercentagechange = 100 * (a - 1);
+$('#averageBookValueChange').html(bookvaluepercentagechange);
 
-$('#bookvaluediff').html(bookvaluediff.toFixed(3));
+
+
+
+
+var bookvaluedifference = cbv - obv;
+var bookvaluedifferencefloat = bookvaluedifference
+
+
+
+
+$('#bookvaluediff').html(bookvaluedifferencefloat);
 
 
 var totalCash = parseFloat($('#div9').html());
@@ -43,7 +54,10 @@ $('#totalcash').html(totalCash);
 
 var year=10;
 var r=1.71; // update this
-var bvc=bookvaluediff.toFixed(3)
+
+$("#currentnote").html(r);
+
+var bvc=bookvaluedifference;
 
 var perc=(1+bvc/100);
 
@@ -61,7 +75,16 @@ extra=Math.pow((1+r),year);
 var c = totalCash*(1-(1/extra))/r+parr/extra;
 
 
-$('#intrinsicValue').html(c);
+$('#intrinsicValue').html(c.toFixed(2));
+
+console.log(typeof divsum)
+
+//console.log(typeof bookvaluedifferencefloat)
+//console.log(typeof divsum)
+
+
+var total = bookvaluedifferencefloat + divsum;
+$("#totalcashsum").html(total)
 
 
 

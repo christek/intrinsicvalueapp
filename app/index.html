@@ -36,7 +36,7 @@
             <div class="row marketing">
                 <div class="col-lg-6">
 
-                    <p>Use the table below to enter in the corresponding values.</p>
+                    <p>Use the table below to enter in the corresponding values for Disney.</p>
                     <table class="table table-bordered">
                         <tr>
                             <th></th>
@@ -104,16 +104,39 @@
                             <td id="bookvalue2">21.21</td>
                             <td id="div9">.60</td>
                         </tr>
-                        <tfoot>
+                        <tr>
                         <td></td>
-                        <td id="epssum"></td>
-                        <td id="bookvaluediff"></td>
-                        <td id="divsum"></td>
-                        </tfoot>
+                        <td>total EPS</td>
+                        <td>change in book value</td>
+                        <td>total dividends</td>
+                        </tr>
+                        <tr>
+                        <td></td>
+                        <td id="epssum" class="danger" style="border: 2px solid green;"></td>
+                        <td id="bookvaluediff" class="warning" style="border: 2px solid green;"></td>
+                        <td id="divsum" class="warning" style="border: 2px solid green;"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total Cash taken out of business</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="totalcashsum" class="success" style="border: 2px solid green;"></td>
+                        </tr>
                     </table>
 
-                    <p>Total Cash taken out of business: <span id="totalcash"></span></p>
-                    <p>Intrinsic Value: <span id="intrinsicValue"></span></p>
+
+                    <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
+                    <p>Cash taken out of business (dividends for one year): <span id="totalcash"></span></p>
+
+                    <p>Current 10 year note: <span id="currentnote"></span>%</p>
+
+                    <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p>
                 </div>
 
             </div>
