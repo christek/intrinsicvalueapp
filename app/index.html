@@ -1,190 +1,221 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>intrinsicvalueapp</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>intrinsicvalueapp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">Intrinsic Value App</h3>
-            </div>
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">Intrinsic Value App</h3>
+    </div>
 
-            <div class="row marketing">
-                <div class="col-lg-6">
+    <div class="row marketing">
+        <div class="col-lg-6">
 
-                    <p>Use the table below to enter in the corresponding values for Disney.</p>
-                    <table class="table table-bordered">
-                        <tr>
-                            <th></th>
-                            <th>EPS</th>
-                            <th>Book Value</th>
-                            <th>Dividend Rate</th>
-                        </tr>
-                        <tr>
-                            <td>2002</td>
-                            <td>NA</td>
-                            <td id="bookvalue1">11.61</td>
-                            <td>NA</td>
-                        </tr>
-                        <tr>
-                            <td>2003</td>
-                            <td id="eps1">.65</td>
-                            <td>11.82</td>
-                            <td id="div1">.21</td>
-                        </tr>
-                        <tr>
-                            <td>2004</td>
-                            <td id="eps2">1.11</td>
-                            <td>13.05</td>
-                            <td id="div2">.24</td>
-                        </tr>
-                        <tr>
-                            <td>2005</td>
-                            <td id="eps3">1.19</td>
-                            <td>13.06</td>
-                            <td id="div3">.27</td>
-                        </tr>
-                        <tr>
-                            <td>2006</td>
-                            <td id="eps4">1.60</td>
-                            <td>15.42</td>
-                            <td id="div4">.31</td>
-                        </tr>
-                        <tr>
-                            <td>2007</td>
-                            <td id="eps5">2.24</td>
-                            <td>15.67</td>
-                            <td id="div5">.35</td>
-                        </tr>
-                        <tr>
-                            <td>2008</td>
-                            <td id="eps6">2.28</td>
-                            <td>17.73</td>
-                            <td id="div6">.35</td>
-                        </tr>
-                        <tr>
-                            <td>2009</td>
-                            <td id="eps7">1.76</td>
-                            <td>18.55</td>
-                            <td id="div7">.35</td>
-                        </tr>
-                        <tr>
-                            <td>2010</td>
-                            <td id="eps8">2.03</td>
-                            <td>19.78</td>
-                            <td id="div8">.40</td>
-                        </tr>
-                        <tr>
-                            <td>2011</td>
-                            <td id="eps9">2.52</td>
-                            <td id="bookvalue2">21.21</td>
-                            <td id="div9">.60</td>
-                        </tr>
-                        <tr>
-                        <td></td>
-                        <td>total EPS</td>
-                        <td>change in book value</td>
-                        <td>total dividends</td>
-                        </tr>
-                        <tr>
-                        <td></td>
-                        <td id="epssum" class="danger" style="border: 2px solid green;"></td>
-                        <td id="bookvaluediff" class="warning" style="border: 2px solid green;"></td>
-                        <td id="divsum" class="warning" style="border: 2px solid green;"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Total Cash taken out of business</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td id="totalcashsum" class="success" style="border: 2px solid green;"></td>
-                        </tr>
-                    </table>
+            <p>Use the table below to enter in the corresponding values for Disney.</p>
+            <table class="table table-bordered">
+                <tr>
+                    <th></th>
+                    <th>EPS</th>
+                    <th>Book Value</th>
+                    <th>Dividend Rate</th>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>NA</td>
+                    <td><input id="bookvalue1" type="text" value="11.61"/></td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>2003</td>
+                    <td><input id="eps1" type="text" value=".65"/></td>
+                    <td><input type="text" value="11.82"/></td>
+                    <td><input id="div1" type="text" value=".21"/></td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td><input id="eps2" type="text" value="1.11"/></td>
+                    <td><input type="text" value="13.05"/></td>
+                    <td><input id="div2" type="text" value=".24"/></td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td><input id="eps3" type="text" value="1.19"/></td>
+                    <td><input type="text" value="13.06"/></td>
+                    <td><input id="div3" type="text" value=".27"/></td>
+                </tr>
+                <tr>
+                    <td>2006</td>
+                    <td><input id="eps4" type="text" value="1.60"/></td>
+                    <td><input type="text" value="15.42"/></td>
+                    <td><input id="div4" type="text" value=".31"/></td>
+                </tr>
+                <tr>
+                    <td>2007</td>
+                    <td><input id="eps5" type="text" value="2.24"/></td>
+                    <td><input type="text" value="15.67"/></td>
+                    <td><input id="div5" type="text" value=".35"/></td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td><input id="eps6" type="text" value="2.28"/></td>
+                    <td><input type="text" value="17.73"/></td>
+                    <td><input id="div6" type="text" value=".35"/></td>
+                </tr>
+                <tr>
+                    <td>2009</td>
+                    <td><input id="eps7" type="text" value="1.76"/></td>
+                    <td><input type="text" value="18.55"/></td>
+                    <td><input id="div7" type="text" value=".35"/></td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td><input id="eps8" type="text" value="2.03"/></td>
+                    <td><input type="text" value="19.78"/></td>
+                    <td><input id="div8" type="text" value=".40"/></td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td ><input id="eps9" type="text" value="2.52"/></td>
+                    <td><input id="bookvalue2" type="text" value="21.21"/></td>
+                    <td><input id="div9" type="text" value=".60"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>total EPS</td>
+                    <td>change in book value</td>
+                    <td>total dividends</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="epssum" class="danger" style="border: 2px solid green;"></td>
+                    <td id="bookvaluediff" class="warning" style="border: 2px solid green;"></td>
+                    <td id="divsum" class="warning" style="border: 2px solid green;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total Cash taken out of business</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="totalcashsum" class="success" style="border: 2px solid green;"></td>
+                </tr>
+            </table>
 
-<div style="border: 1px solid green;">
-                    <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
-                    <p>Cash taken out of business (dividends for one year): $<span id="totalcash"></span></p>
-
-                    <p>Current 10 year note: <span id="currentnote"></span>%</p>
-</div>
-                    <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p>
-                </div>
-
-            </div>
-
-
+            <div style="border: 1px solid green;">
+                <p>Cash taken out of business (dividends for one year): $<span id="totalcash"></span></p>
+                <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
+                <p>Current book value: $<span id="currentBookValue"></span></p>
 
 
 
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
+                <p>Current 10 year note: <span id="currentnote"></span>%</p>
 
+            <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p>  </div>
         </div>
 
+        <div id="chartContainer">
+            <script src="http://d3js.org/d3.v3.min.js"></script>
+            <script src="http://dimplejs.org/dist/dimple.v1.1.2.min.js"></script>
+            <script type="text/javascript">
+                var svg = dimple.newSvg("#chartContainer", 590, 400);
+                d3.tsv("/data/example_data.tsv", function (data) {
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+                    var myChart = new dimple.chart(svg, data);
+                    myChart.setBounds(60, 30, 505, 305);
+                    var x = myChart.addCategoryAxis("x", "Year");
+                    x.addOrderRule("Year");
+                    myChart.addMeasureAxis("y", "Price");
+                    var s = myChart.addSeries(null, dimple.plot.line);
+                    myChart.draw();
+                });
+            </script>
+        </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+    </div>
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
-        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
-        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
-        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/button.js"></script>
-        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
-        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+    <div class="footer">
+        <p>I ♥ value investing</p>
+    </div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="bower_components/sass-bootstrap/js/affix.js"></script>
+<script src="bower_components/sass-bootstrap/js/alert.js"></script>
+<script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+<script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+<script src="bower_components/sass-bootstrap/js/modal.js"></script>
+<script src="bower_components/sass-bootstrap/js/transition.js"></script>
+<script src="bower_components/sass-bootstrap/js/button.js"></script>
+<script src="bower_components/sass-bootstrap/js/popover.js"></script>
+<script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+<script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+<script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+<script src="bower_components/sass-bootstrap/js/tab.js"></script>
+<!-- endbuild -->
 </body>
 </html>
