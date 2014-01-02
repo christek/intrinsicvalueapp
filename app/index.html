@@ -61,6 +61,12 @@
             </div>
 
             <p>Use the table below to enter in the corresponding values for Disney.</p>
+
+
+            <div id="tableId">
+
+            </div>
+
             <table class="table table-bordered">
                 <tr>
                     <th></th>
@@ -125,7 +131,7 @@
                 <tr>
                     <td>2011</td>
                     <td ><input id="eps9" type="text" value="2.52"/></td>
-                    <td><input id="bookvalue2" type="text" value="21.21"/></td>
+                    <td><input id="bookvalue9" type="text" value="21.21"/></td>
                     <td><input id="div9" type="text" value=".60"/></td>
                 </tr>
                 <tr>
@@ -181,6 +187,8 @@
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/mustache/mustache.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -203,6 +211,7 @@
 </script>
 
 <!-- build:js scripts/main.js -->
+<script src="scripts/data.json"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
 

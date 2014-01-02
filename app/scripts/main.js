@@ -1,3 +1,26 @@
+var stockData = {
+    "DIS": {
+        "yearretrieved": [2002],
+        "eps": ["NA", .65, 1.11, 1.19, 1.60, 2.24, 2.28, 1.76, 2.03, 2.52],
+        "bookvalue": [11.61, 11.82, 13.05, 13.06, 15.42, 15.67, 17.73, 18.55, 19.78, 21.21],
+        "dividendrate": ["NA", .21, .24, .27, .31, .35, .35, .35, .40, .60]
+    }
+};
+
+var tableObject = { tableStuff: []};
+
+_(10).times(function(n){
+    var year = stockData["DIS"]["yearretrieved"][0]+n;
+    var bookvalue = stockData["DIS"]["bookvalue"][n];
+    var dividendrate = stockData["DIS"]["dividendrate"][n];
+    var datarow = {'year': year, 'bookvalue': bookvalue, 'dividendrate': dividendrate}
+    //console.log(year+'|'+bookvalue+'|'+dividendrate);
+    tableObject.tableStuff.push(datarow);
+});
+
+var template = "{{#tableStuff}}{{year}} {{bookvalue}} {{dividendrate}}<br />{{/tableStuff}}"
+document.getElementById('tableId').innerHTML =
+    Mustache.render(template, tableObject)
 
 var epssum = parseFloat($('#eps1').val()) +
     parseFloat($('#eps2').val()) +
@@ -26,7 +49,7 @@ $('#divsum').html(divsum);
 
 
 
-var cbv = parseFloat($('#bookvalue2').val());
+var cbv = parseFloat($('#bookvalue9').val());
 var obv = parseFloat($('#bookvalue1').val());
 var years = 9;
 
