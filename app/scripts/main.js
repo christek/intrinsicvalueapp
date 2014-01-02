@@ -11,14 +11,15 @@ var tableObject = { tableStuff: []};
 
 _(10).times(function(n){
     var year = stockData["DIS"]["yearretrieved"][0]+n;
+    var eps = stockData["DIS"]["eps"][n];
     var bookvalue = stockData["DIS"]["bookvalue"][n];
     var dividendrate = stockData["DIS"]["dividendrate"][n];
-    var datarow = {'year': year, 'bookvalue': bookvalue, 'dividendrate': dividendrate}
+    var datarow = {'year': year, 'eps': eps, 'bookvalue': bookvalue, 'dividendrate': dividendrate}
     //console.log(year+'|'+bookvalue+'|'+dividendrate);
     tableObject.tableStuff.push(datarow);
 });
 
-var template = "{{#tableStuff}}{{year}} {{bookvalue}} {{dividendrate}}<br />{{/tableStuff}}"
+var template = "{{#tableStuff}}<tr><td>{{year}}</td><td>{{eps}}</td><td>{{bookvalue}}</td><td>{{dividendrate}}</td></tr>{{/tableStuff}}"
 document.getElementById('tableId').innerHTML =
     Mustache.render(template, tableObject)
 

@@ -63,9 +63,16 @@
             <p>Use the table below to enter in the corresponding values for Disney.</p>
 
 
-            <div id="tableId">
+            <table class="table table-bordered">
+                <tr>
+                    <th></th>
+                    <th>EPS</th>
+                    <th>Book Value</th>
+                    <th>Dividend Rate</th>
 
-            </div>
+                </tr>
+                <tbody id="tableId"></tbody>
+            </table>
 
             <table class="table table-bordered">
                 <tr>
@@ -130,7 +137,7 @@
                 </tr>
                 <tr>
                     <td>2011</td>
-                    <td ><input id="eps9" type="text" value="2.52"/></td>
+                    <td><input id="eps9" type="text" value="2.52"/></td>
                     <td><input id="bookvalue9" type="text" value="21.21"/></td>
                     <td><input id="div9" type="text" value=".60"/></td>
                 </tr>
@@ -162,23 +169,23 @@
 
             <div style="border: 1px solid green;">
                 <p>Cash taken out of business (dividends for one year): $<span id="totalcash"></span></p>
-                <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
-                <p>Current book value: $<span id="currentBookValue"></span></p>
 
+                <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
+
+                <p>Current book value: $<span id="currentBookValue"></span></p>
 
 
                 <p>Current 10 year note: <span id="currentnote"></span>%</p>
 
-            <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p>  </div>
+                <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p></div>
         </div>
-
 
 
     </div>
 
 
     <div class="footer">
-        <p>I ♥ value investing</p>
+        <p>I ♥ value investing - should be 40.44</p>
     </div>
 
 </div>
