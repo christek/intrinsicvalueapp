@@ -294,6 +294,12 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js',
+                singleRun: true
+            }
         }
     });
 
@@ -321,7 +327,7 @@ module.exports = function (grunt) {
         'concurrent:test',
         'autoprefixer',
         'connect:test',
-        'mocha'
+        'karma'
     ]);
 
     grunt.registerTask('build', [

@@ -20,8 +20,8 @@ _(10).times(function(n){
 });
 
 var template = "{{#tableStuff}}<tr><td>{{year}}</td><td><input id='eps{{index}}' type='text' value='{{eps}}'></td><td><input id='bookvalue{{index}}' type='text' value='{{bookvalue}}'></td><td><input id='dividendrate{{index}}' type='text' value='{{dividendrate}}'></td></tr>{{/tableStuff}}";
-document.getElementById('tableId').innerHTML =
-    Mustache.render(template, tableObject)
+
+document.getElementById('tableId').innerHTML = Mustache.render(template, tableObject);
 
 var epssum = parseFloat($('#eps2').val()) +
     parseFloat($('#eps3').val()) +
