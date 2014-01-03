@@ -19,38 +19,38 @@ _(10).times(function(n){
     tableObject.tableStuff.push(datarow);
 });
 
-var template = "{{#tableStuff}}<tr><td>{{year}}</td><td><input id='eps{{index}}' type='text' value='{{eps}}'></td><td><input id='bookvalue{{index}}' type='text' value='{{bookvalue}}'></td><td><input id='dividendrate{{index}}' type='text' value='{{dividendrate}}'></td></tr>{{/tableStuff}}"
+var template = "{{#tableStuff}}<tr><td>{{year}}</td><td><input id='eps{{index}}' type='text' value='{{eps}}'></td><td><input id='bookvalue{{index}}' type='text' value='{{bookvalue}}'></td><td><input id='dividendrate{{index}}' type='text' value='{{dividendrate}}'></td></tr>{{/tableStuff}}";
 document.getElementById('tableId').innerHTML =
     Mustache.render(template, tableObject)
 
-var epssum = parseFloat($('#eps1').val()) +
-    parseFloat($('#eps2').val()) +
+var epssum = parseFloat($('#eps2').val()) +
     parseFloat($('#eps3').val()) +
     parseFloat($('#eps4').val()) +
     parseFloat($('#eps5').val()) +
     parseFloat($('#eps6').val()) +
     parseFloat($('#eps7').val()) +
     parseFloat($('#eps8').val()) +
-    parseFloat($('#eps9').val());
+    parseFloat($('#eps9').val()) +
+    parseFloat($('#eps10').val());
 
 $('#epssum').html(epssum.toFixed(2));
 
-var divsum = parseFloat($('#div1').val()) +
-    parseFloat($('#div2').val()) +
-    parseFloat($('#div3').val()) +
-    parseFloat($('#div4').val()) +
-    parseFloat($('#div5').val()) +
-    parseFloat($('#div6').val()) +
-    parseFloat($('#div7').val()) +
-    parseFloat($('#div8').val()) +
-    parseFloat($('#div9').val());
+var divsum = parseFloat($('#dividendrate2').val()) +
+    parseFloat($('#dividendrate3').val()) +
+    parseFloat($('#dividendrate4').val()) +
+    parseFloat($('#dividendrate5').val()) +
+    parseFloat($('#dividendrate6').val()) +
+    parseFloat($('#dividendrate7').val()) +
+    parseFloat($('#dividendrate8').val()) +
+    parseFloat($('#dividendrate9').val()) +
+    parseFloat($('#dividendrate10').val());
 
 $('#divsum').html(divsum);
 
 
 
 
-var cbv = parseFloat($('#bookvalue9').val());
+var cbv = parseFloat($('#bookvalue10').val());
 var obv = parseFloat($('#bookvalue1').val());
 var years = 9;
 

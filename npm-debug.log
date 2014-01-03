@@ -1,0 +1,183 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-mocha' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose cache add [ 'generator-mocha', null ]
+5 verbose cache add name=undefined spec="generator-mocha" args=["generator-mocha",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'generator-mocha',
+6 verbose parsed url   path: 'generator-mocha',
+6 verbose parsed url   href: 'generator-mocha' }
+7 silly lockFile 900d0be4-generator-mocha generator-mocha
+8 verbose lock generator-mocha C:\Users\PLCHTOK\AppData\Roaming\npm-cache\900d0be4-generator-mocha.lock
+9 silly lockFile 900d0be4-generator-mocha generator-mocha
+10 silly lockFile 900d0be4-generator-mocha generator-mocha
+11 verbose addNamed [ 'generator-mocha', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile fba0ee61-generator-mocha generator-mocha@
+14 verbose lock generator-mocha@ C:\Users\PLCHTOK\AppData\Roaming\npm-cache\fba0ee61-generator-mocha.lock
+15 silly addNameRange { name: 'generator-mocha', range: '*', hasData: false }
+16 verbose url raw generator-mocha
+17 verbose url resolving [ 'http://registry.npmjs.org/', './generator-mocha' ]
+18 verbose url resolved http://registry.npmjs.org/generator-mocha
+19 info trying registry request attempt 1 at 13:07:32
+20 verbose etag "5KEJLAW4HBYDV9824FZ6U1L0I"
+21 http GET http://registry.npmjs.org/generator-mocha
+22 http 200 http://registry.npmjs.org/generator-mocha
+23 silly registry.get cb [ 200,
+23 silly registry.get   { via: '1.1 varnish, 1.1 PLPIA-S-0000034',
+23 silly registry.get     connection: 'Keep-Alive',
+23 silly registry.get     'proxy-connection': 'Keep-Alive',
+23 silly registry.get     'content-length': '7518',
+23 silly registry.get     age: '11219',
+23 silly registry.get     date: 'Fri, 03 Jan 2014 12:07:40 GMT',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     etag: '"36WMHKS8N97QFEF6X992WHHIP"',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     'x-served-by': 'cache-fra1228-FRA',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1388750860.407499075,VS0,VE131',
+23 silly registry.get     vary: 'Accept' } ]
+24 silly addNameRange number 2 { name: 'generator-mocha', range: '*', hasData: true }
+25 silly addNameRange versions [ 'generator-mocha', [ '0.1.0', '0.1.1', '0.1.2', '0.1.3' ] ]
+26 verbose addNamed [ 'generator-mocha', '0.1.3' ]
+27 verbose addNamed [ '0.1.3', '0.1.3' ]
+28 silly lockFile 0933ae3b-generator-mocha-0-1-3 generator-mocha@0.1.3
+29 verbose lock generator-mocha@0.1.3 C:\Users\PLCHTOK\AppData\Roaming\npm-cache\0933ae3b-generator-mocha-0-1-3.lock
+30 silly lockFile 243b7c2f--mocha-generator-mocha-0-1-3-tgz http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz
+31 verbose lock http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz C:\Users\PLCHTOK\AppData\Roaming\npm-cache\243b7c2f--mocha-generator-mocha-0-1-3-tgz.lock
+32 verbose addRemoteTarball [ 'http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz',
+32 verbose addRemoteTarball   'd54977bc0839b30c9b15fdd900e0ecd42afe14c8' ]
+33 info retry fetch attempt 1 at 13:07:33
+34 verbose fetch to= C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\tmp.tgz
+35 http GET http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz
+36 http 200 http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz
+37 verbose tar unpack C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\tmp.tgz
+38 silly lockFile e63d40cc-3380-0-12117960792966187-package tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package
+39 verbose lock tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package C:\Users\PLCHTOK\AppData\Roaming\npm-cache\e63d40cc-3380-0-12117960792966187-package.lock
+40 silly lockFile 4d35fea0-3380-0-12117960792966187-tmp-tgz tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\tmp.tgz
+41 verbose lock tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\tmp.tgz C:\Users\PLCHTOK\AppData\Roaming\npm-cache\4d35fea0-3380-0-12117960792966187-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry lib/generators/app/index.js
+45 silly gunzTarPerm extractEntry lib/templates/test.js
+46 silly gunzTarPerm extractEntry lib/templates/_bower.json
+47 silly gunzTarPerm extractEntry lib/templates/bowerrc
+48 silly gunzTarPerm extractEntry lib/templates/index.html
+49 silly gunzTarPerm extractEntry readme.md
+50 silly lockFile e63d40cc-3380-0-12117960792966187-package tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package
+51 silly lockFile e63d40cc-3380-0-12117960792966187-package tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package
+52 silly lockFile 4d35fea0-3380-0-12117960792966187-tmp-tgz tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\tmp.tgz
+53 silly lockFile 4d35fea0-3380-0-12117960792966187-tmp-tgz tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\tmp.tgz
+54 verbose tar pack [ 'C:\\Users\\PLCHTOK\\AppData\\Roaming\\npm-cache\\generator-mocha\\0.1.3\\package.tgz',
+54 verbose tar pack   'C:\\Users\\PLCHTOK\\AppData\\Local\\Temp\\npm-25804-cRfk9IB1\\1388750853380-0.12117960792966187\\package' ]
+55 verbose tarball C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+56 verbose folder C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package
+57 silly lockFile e63d40cc-3380-0-12117960792966187-package tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package
+58 verbose lock tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package C:\Users\PLCHTOK\AppData\Roaming\npm-cache\e63d40cc-3380-0-12117960792966187-package.lock
+59 silly lockFile d2bf487d-enerator-mocha-0-1-3-package-tgz tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+60 verbose lock tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz C:\Users\PLCHTOK\AppData\Roaming\npm-cache\d2bf487d-enerator-mocha-0-1-3-package-tgz.lock
+61 silly lockFile e63d40cc-3380-0-12117960792966187-package tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package
+62 silly lockFile e63d40cc-3380-0-12117960792966187-package tar://C:\Users\PLCHTOK\AppData\Local\Temp\npm-25804-cRfk9IB1\1388750853380-0.12117960792966187\package
+63 silly lockFile d2bf487d-enerator-mocha-0-1-3-package-tgz tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+64 silly lockFile d2bf487d-enerator-mocha-0-1-3-package-tgz tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+65 silly lockFile 1ee35a8b-he-generator-mocha-0-1-3-package C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package
+66 verbose lock C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package C:\Users\PLCHTOK\AppData\Roaming\npm-cache\1ee35a8b-he-generator-mocha-0-1-3-package.lock
+67 silly lockFile 1ee35a8b-he-generator-mocha-0-1-3-package C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package
+68 silly lockFile 1ee35a8b-he-generator-mocha-0-1-3-package C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package
+69 verbose tar unpack C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+70 silly lockFile 41c31e0e-he-generator-mocha-0-1-3-package tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package
+71 verbose lock tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package C:\Users\PLCHTOK\AppData\Roaming\npm-cache\41c31e0e-he-generator-mocha-0-1-3-package.lock
+72 silly lockFile d2bf487d-enerator-mocha-0-1-3-package-tgz tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+73 verbose lock tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz C:\Users\PLCHTOK\AppData\Roaming\npm-cache\d2bf487d-enerator-mocha-0-1-3-package-tgz.lock
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+77 silly gunzTarPerm extractEntry lib/generators/app/index.js
+78 silly gunzTarPerm modified mode [ 'lib/generators/app/index.js', 438, 420 ]
+79 silly gunzTarPerm extractEntry lib/templates/test.js
+80 silly gunzTarPerm modified mode [ 'lib/templates/test.js', 438, 420 ]
+81 silly gunzTarPerm extractEntry lib/templates/bowerrc
+82 silly gunzTarPerm modified mode [ 'lib/templates/bowerrc', 438, 420 ]
+83 silly gunzTarPerm extractEntry lib/templates/index.html
+84 silly gunzTarPerm modified mode [ 'lib/templates/index.html', 438, 420 ]
+85 silly gunzTarPerm extractEntry lib/templates/_bower.json
+86 silly gunzTarPerm modified mode [ 'lib/templates/_bower.json', 438, 420 ]
+87 silly gunzTarPerm extractEntry readme.md
+88 silly gunzTarPerm modified mode [ 'readme.md', 438, 420 ]
+89 silly lockFile 41c31e0e-he-generator-mocha-0-1-3-package tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package
+90 silly lockFile 41c31e0e-he-generator-mocha-0-1-3-package tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package
+91 silly lockFile d2bf487d-enerator-mocha-0-1-3-package-tgz tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+92 silly lockFile d2bf487d-enerator-mocha-0-1-3-package-tgz tar://C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+93 verbose chmod C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz 644
+94 silly chown skipping for windows C:\Users\PLCHTOK\AppData\Roaming\npm-cache\generator-mocha\0.1.3\package.tgz
+95 silly lockFile 243b7c2f--mocha-generator-mocha-0-1-3-tgz http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz
+96 silly lockFile 243b7c2f--mocha-generator-mocha-0-1-3-tgz http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz
+97 silly lockFile 0933ae3b-generator-mocha-0-1-3 generator-mocha@0.1.3
+98 silly lockFile 0933ae3b-generator-mocha-0-1-3 generator-mocha@0.1.3
+99 silly lockFile fba0ee61-generator-mocha generator-mocha@
+100 silly lockFile fba0ee61-generator-mocha generator-mocha@
+101 silly resolved [ { name: 'generator-mocha',
+101 silly resolved     version: '0.1.3',
+101 silly resolved     description: 'Yeoman generator for Mocha',
+101 silly resolved     keywords: [ 'yeoman-generator', 'scaffold', 'unit', 'test', 'bdd', 'tdd' ],
+101 silly resolved     homepage: 'https://github.com/yeoman/generator-mocha',
+101 silly resolved     bugs: { url: 'https://github.com/yeoman/generator-mocha/issues' },
+101 silly resolved     author: { name: 'Chrome Developer Relations' },
+101 silly resolved     repository:
+101 silly resolved      { type: 'git',
+101 silly resolved        url: 'git://github.com/yeoman/generator-mocha.git' },
+101 silly resolved     scripts: { test: 'mocha --reporter spec' },
+101 silly resolved     dependencies: { 'yeoman-generator': '~0.14.0' },
+101 silly resolved     devDependencies: { mocha: '~1.14.0' },
+101 silly resolved     peerDependencies: { yo: '>=1.0.0-rc.1.1' },
+101 silly resolved     engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+101 silly resolved     licenses: [ [Object] ],
+101 silly resolved     files: [ 'lib' ],
+101 silly resolved     readme: '# Mocha generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-mocha.png?branch=master)](http://travis-ci.org/yeoman/generator-mocha)\n\n\n## Getting Started\n\nInstall: `npm install -g generator-mocha`\n\n\n## Contribute\n\nSee the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md)\n\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php)\n',
+101 silly resolved     readmeFilename: 'readme.md',
+101 silly resolved     _id: 'generator-mocha@0.1.3',
+101 silly resolved     dist: { shasum: 'd7336525c3c910361c5e104646e599f63e8bf0a6' },
+101 silly resolved     _from: 'generator-mocha@',
+101 silly resolved     _resolved: 'http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.1.3.tgz' } ]
+102 info install generator-mocha@0.1.3 into C:\Users\PLCHTOK\AppData\Roaming\npm
+103 info installOne generator-mocha@0.1.3
+104 info C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules\generator-mocha unbuild
+105 info preuninstall generator-mocha@0.1.1
+106 info uninstall generator-mocha@0.1.1
+107 verbose true,C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules,C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules unbuild generator-mocha@0.1.1
+108 info postuninstall generator-mocha@0.1.1
+109 info C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules\generator-mocha unbuild
+110 error error rolling back Error: EPERM, rmdir 'C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules\generator-mocha\node_modules\yeoman-generator\node_modules\cheerio\node_modules\cheerio-select\node_modules\CSSselect\node_modules\domutils\tests'
+110 error error rolling back  generator-mocha@0.1.3 { [Error: EPERM, rmdir 'C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules\generator-mocha\node_modules\yeoman-generator\node_modules\cheerio\node_modules\cheerio-select\node_modules\CSSselect\node_modules\domutils\tests']
+110 error error rolling back   errno: 50,
+110 error error rolling back   code: 'EPERM',
+110 error error rolling back   path: 'C:\\Users\\PLCHTOK\\AppData\\Roaming\\npm\\node_modules\\generator-mocha\\node_modules\\yeoman-generator\\node_modules\\cheerio\\node_modules\\cheerio-select\\node_modules\\CSSselect\\node_modules\\domutils\\tests' }
+111 error Error: ENOTEMPTY, rmdir 'C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules\generator-mocha\node_modules\yeoman-generator\node_modules\request\node_modules\qs\test'
+112 error If you need help, you may report this log at:
+112 error     <http://github.com/isaacs/npm/issues>
+112 error or email it to:
+112 error     <npm-@googlegroups.com>
+113 error System Windows_NT 6.1.7601
+114 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "generator-mocha"
+115 error cwd c:\Users\PLCHTOK\Documents\intrinsicvalueapp
+116 error node -v v0.10.22
+117 error npm -v 1.3.14
+118 error path C:\Users\PLCHTOK\AppData\Roaming\npm\node_modules\generator-mocha\node_modules\yeoman-generator\node_modules\request\node_modules\qs\test
+119 error code ENOTEMPTY
+120 error errno 53
+121 verbose exit [ 53, true ]
