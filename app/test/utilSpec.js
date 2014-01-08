@@ -32,3 +32,10 @@ describe("average book value change calculator", function() {
         expect(getAverageBookValueChange(222, 2, 10)).toBe(60.15197467194875);
     });
 });
+
+describe("intrinsic value calculator", function() {
+    it("should correctly return intrinsic value exactly as in buffets books tool video example", function() {
+        expect(getIntrinsicValue(.60, 21.21, 6.9248664595840115, 10, 1.71)).toBe(40.44190192078206);
+    });
+});
+
