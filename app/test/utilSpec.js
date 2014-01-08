@@ -17,3 +17,18 @@ describe("earnings per share sum", function() {
         expect(sumEarningsPerShare([0.65,1.11,1.19,1.6,2.24,2.28,1.76,2.03,2.52], true)).toBe('15.38');
     });
 });
+
+describe("average book value change calculator", function() {
+    it("should correctly return average book value change exactly as in buffets books tool video example", function() {
+        expect(getAverageBookValueChange(21.21, 11.61, 9)).toBe(6.9248664595840115);
+    });
+    it("should correctly return average book value change exactly as in buffets books tool with random values 1", function() {
+        expect(getAverageBookValueChange(11, 10, 10)).toBe(0.9576582776886999);
+    });
+    it("should correctly return average book value change exactly as in buffets books tool with random values 2", function() {
+        expect(getAverageBookValueChange(22, 10, 5)).toBe(17.08049129648923);
+    });
+    it("should correctly return average book value change exactly as in buffets books tool with random values 3", function() {
+        expect(getAverageBookValueChange(222, 2, 10)).toBe(60.15197467194875);
+    });
+});
