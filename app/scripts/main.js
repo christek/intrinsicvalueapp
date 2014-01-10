@@ -78,7 +78,7 @@ $("#totalcashsum").html(total);
 
 
 //**************************************************
-var dividendsForOneYear = parseFloat($('#div9').val());
+var dividendsForOneYear = stockData["DIS"]["dividendrate"][9];
 $('#totalcash').html(dividendsForOneYear);
 
 
@@ -108,5 +108,16 @@ extra=Math.pow((1+r),year);
 
 var c = dividendsForOneYear*(1-(1/extra))/r+parr/extra;
 
-$('#intrinsicValue').html(c.toFixed(2));
+
+
+
+
+
+
+var currentBookValue = stockData["DIS"]["bookvalue"][9];
+var oldBookValue = stockData["DIS"]["bookvalue"][0];
+var yearsBetweenBookValues = 10;
+var bookValuePercentageChange =  getAverageBookValueChange(currentBookValue, oldBookValue, yearsBetweenBookValues);
+
+$('#intrinsicValue').html(getIntrinsicValue(dividendsForOneYear, currentBookValue, bookValuePercentageChange, year, r  ));
 

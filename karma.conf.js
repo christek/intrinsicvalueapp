@@ -57,7 +57,7 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
 
-    browsers: ['PhantomJS','Chrome','Firefox','ChromeCanary'],
+    browsers: ['PhantomJS','Chrome','Firefox','ChromeCanary', 'IE'],
     //browsers: ['PhantomJS'],
 
 
