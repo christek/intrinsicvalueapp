@@ -23,101 +23,42 @@ var template = "{{#tableStuff}}<tr><td>{{year}}</td><td><input id='eps{{index}}'
 
 document.getElementById('tableId').innerHTML = Mustache.render(template, tableObject);
 
-var epssum = parseFloat($('#eps2').val()) +
-    parseFloat($('#eps3').val()) +
-    parseFloat($('#eps4').val()) +
-    parseFloat($('#eps5').val()) +
-    parseFloat($('#eps6').val()) +
-    parseFloat($('#eps7').val()) +
-    parseFloat($('#eps8').val()) +
-    parseFloat($('#eps9').val()) +
-    parseFloat($('#eps10').val());
+var epssum = sumEarningsPerShare(_.rest(stockData["DIS"]["eps"]), false);
 
-$('#epssum').html(epssum.toFixed(2));
+$('#epssum').html(epssum);
 
-var divsum = parseFloat($('#dividendrate2').val()) +
-    parseFloat($('#dividendrate3').val()) +
-    parseFloat($('#dividendrate4').val()) +
-    parseFloat($('#dividendrate5').val()) +
-    parseFloat($('#dividendrate6').val()) +
-    parseFloat($('#dividendrate7').val()) +
-    parseFloat($('#dividendrate8').val()) +
-    parseFloat($('#dividendrate9').val()) +
-    parseFloat($('#dividendrate10').val());
+var divsum = sumEarningsPerShare(_.rest(stockData["DIS"]["dividendrate"]), false);
 
 $('#divsum').html(divsum);
 
+var currentBookValue = stockData["DIS"]["bookvalue"][9];
+var oldBookValue = stockData["DIS"]["bookvalue"][0];
 
+var yearsBetweenBookValues = 9;
 
-
-var cbv = parseFloat($('#bookvalue10').val());
-var obv = parseFloat($('#bookvalue1').val());
-var years = 9;
-
-var upper = 1 / years;
-var base = cbv / obv;
-var a = Math.pow(base, upper);
-var bookvaluepercentagechange = 100 * (a - 1);
+var bookvaluepercentagechange = getAverageBookValueChange(currentBookValue, oldBookValue, yearsBetweenBookValues);
 $('#averageBookValueChange').html(bookvaluepercentagechange);
 
-
-
-
-
-var bookvaluedifference = cbv - obv;
+var bookvaluedifference = currentBookValue - oldBookValue;
 var bookvaluedifferencefloat = bookvaluedifference
 
-
-
-
 $('#bookvaluediff').html(bookvaluedifferencefloat);
-
 
 var total = bookvaluedifferencefloat + divsum;
 $("#totalcashsum").html(total);
 
-
-//**************************************************
 var dividendsForOneYear = stockData["DIS"]["dividendrate"][9];
 $('#totalcash').html(dividendsForOneYear);
 
-
-$("#currentBookValue").html(cbv);
-
-
-
-
+$("#currentBookValue").html(currentBookValue);
 
 var year=10;
 var r=1.71; // update this
 
 $("#currentnote").html(r);
 
-var bvc=bookvaluepercentagechange;
-
-var perc=(1+bvc/100);
-
-var base=Math.pow(perc,year);
-
-var parr=cbv*base;
-
-
-var r=r/100;
-
-extra=Math.pow((1+r),year);
-
-var c = dividendsForOneYear*(1-(1/extra))/r+parr/extra;
-
-
-
-
-
-
-
-var currentBookValue = stockData["DIS"]["bookvalue"][9];
-var oldBookValue = stockData["DIS"]["bookvalue"][0];
-var yearsBetweenBookValues = 10;
-var bookValuePercentageChange =  getAverageBookValueChange(currentBookValue, oldBookValue, yearsBetweenBookValues);
+var YEARSBETWEENBOOKVALUES = 9;
+var bookValuePercentageChange =  getAverageBookValueChange(currentBookValue, oldBookValue, YEARSBETWEENBOOKVALUES);
 
 $('#intrinsicValue').html(getIntrinsicValue(dividendsForOneYear, currentBookValue, bookValuePercentageChange, year, r  ));
 

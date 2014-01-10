@@ -23,41 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="util.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="util.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/util.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.44671533" vertical-offset="0" max-vertical-offset="685">
+            <state line="12" column="9" selection-start="267" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleteme.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styles/deleteme.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1993" column="0" selection-start="0" selection-end="32174" vertical-scroll-proportion="-38.923077" vertical-offset="32869" max-vertical-offset="34306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="0" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.0" vertical-offset="1508" max-vertical-offset="2193">
+            <state line="56" column="57" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.29095355" vertical-offset="714" max-vertical-offset="1598">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="39" selection-start="5379" selection-end="5379" vertical-scroll-proportion="0.0" vertical-offset="2157" max-vertical-offset="3094">
-              <folding>
-                <marker date="1389274632375" expanded="true" signature="887:1040" placeholder="..." />
-                <marker date="1389274632375" expanded="true" signature="980:1008" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +44,7 @@
       <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/karma.conf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="65" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="1326">
+            <state line="59" column="65" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
               <folding />
             </state>
           </provider>
@@ -74,7 +53,7 @@
       <file leaf-file-name="utilSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/test/utilSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="69" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="731">
+            <state line="34" column="7" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -103,17 +82,17 @@
         <option value="$PROJECT_DIR$/karma.conf.js" />
         <option value="$PROJECT_DIR$/app/test/utilSpec.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/main.js" />
-        <option value="$PROJECT_DIR$/app/scripts/util.js" />
         <option value="$PROJECT_DIR$/app/styles/deleteme.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/util.js" />
+        <option value="$PROJECT_DIR$/app/scripts/main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="519" />
-    <option name="y" value="5" />
-    <option name="width" value="1390" />
-    <option name="height" value="856" />
+    <option name="x" value="325" />
+    <option name="y" value="7" />
+    <option name="width" value="1583" />
+    <option name="height" value="1015" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -187,7 +166,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,14 +238,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="519" y="5" width="1390" height="856" extended-state="0" />
-    <editor active="true" />
+    <frame x="325" y="7" width="1583" height="1015" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924336" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29403204" sideWeight="0.75056946" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1869815" sideWeight="0.67075664" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24943052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -275,7 +255,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32971373" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -340,11 +319,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9333" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="916" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="282" column="21" selection-start="9285" selection-end="9285" vertical-scroll-proportion="0.0" vertical-offset="4483" max-vertical-offset="6086" />
@@ -355,26 +329,12 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9333" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/test/utilSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="69" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="65" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="156" column="39" selection-start="5379" selection-end="5379" vertical-scroll-proportion="0.0" vertical-offset="2157" max-vertical-offset="3094">
           <folding>
-            <marker date="1389274632375" expanded="true" signature="887:1040" placeholder="..." />
-            <marker date="1389274632375" expanded="true" signature="980:1008" placeholder="..." />
+            <marker date="1389274632375" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1389274632375" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -386,16 +346,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.0" vertical-offset="1508" max-vertical-offset="2193">
+        <state line="12" column="9" selection-start="267" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/util.js">
+    <entry file="file://$PROJECT_DIR$/app/test/utilSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="562" selection-end="562" vertical-scroll-proportion="0.44671533" vertical-offset="0" max-vertical-offset="685">
+        <state line="34" column="7" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="65" selection-start="1543" selection-end="1543" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="57" selection-start="1950" selection-end="1950" vertical-scroll-proportion="0.29095355" vertical-offset="714" max-vertical-offset="1598">
           <folding />
         </state>
       </provider>
