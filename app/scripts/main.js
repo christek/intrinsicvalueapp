@@ -1,19 +1,27 @@
+var company = "WMK";
+
 var stockData = {
     "DIS": {
         "yearretrieved": [2002],
         "eps": ["NA", .65, 1.11, 1.19, 1.60, 2.24, 2.28, 1.76, 2.03, 2.52],
         "bookvalue": [11.61, 11.82, 13.05, 13.06, 15.42, 15.67, 17.73, 18.55, 19.78, 21.21],
         "dividendrate": ["NA", .21, .24, .27, .31, .35, .35, .35, .40, .60]
+    },
+    "WMK": {
+        "yearretrieved": [2012],
+        "eps": ["NA", 2.11, 2.35, 2.07, 1.89, 1.74, 2.33, 2.54, 2.81, 3.07],
+        "bookvalue": [21.11, 22.35, 23.29, 24.02, 24.52, 25.68, 27.07, 27.73, 29.58, 29.58],
+        "dividendrate": ["NA", 1.20, 1.20, 1.20, 1.20, 1.20, 1.20, 1.20, 1.20, 1.20]
     }
 };
 
 var tableObject = { tableStuff: []};
 
 _(10).times(function(n){
-    var year = stockData["DIS"]["yearretrieved"][0]+n;
-    var eps = stockData["DIS"]["eps"][n];
-    var bookvalue = stockData["DIS"]["bookvalue"][n];
-    var dividendrate = stockData["DIS"]["dividendrate"][n];
+    var year = stockData[company]["yearretrieved"][0]+n;
+    var eps = stockData[company]["eps"][n];
+    var bookvalue = stockData[company]["bookvalue"][n];
+    var dividendrate = stockData[company]["dividendrate"][n];
     var datarow = {'year': year, 'eps': eps, 'bookvalue': bookvalue, 'dividendrate': dividendrate, 'index': n+1}
     //console.log(year+'|'+bookvalue+'|'+dividendrate);
     tableObject.tableStuff.push(datarow);
@@ -23,16 +31,16 @@ var template = "{{#tableStuff}}<tr><td>{{year}}</td><td><input id='eps{{index}}'
 
 document.getElementById('tableId').innerHTML = Mustache.render(template, tableObject);
 
-var epssum = sumEarningsPerShare(_.rest(stockData["DIS"]["eps"]), false);
+var epssum = sumEarningsPerShare(_.rest(stockData[company]["eps"]), false);
 
 $('#epssum').html(epssum);
 
-var divsum = sumEarningsPerShare(_.rest(stockData["DIS"]["dividendrate"]), false);
+var divsum = sumEarningsPerShare(_.rest(stockData[company]["dividendrate"]), false);
 
 $('#divsum').html(divsum);
 
-var currentBookValue = stockData["DIS"]["bookvalue"][9];
-var oldBookValue = stockData["DIS"]["bookvalue"][0];
+var currentBookValue = stockData[company]["bookvalue"][9];
+var oldBookValue = stockData[company]["bookvalue"][0];
 
 var yearsBetweenBookValues = 9;
 
@@ -47,13 +55,13 @@ $('#bookvaluediff').html(bookvaluedifferencefloat);
 var total = bookvaluedifferencefloat + divsum;
 $("#totalcashsum").html(total);
 
-var dividendsForOneYear = stockData["DIS"]["dividendrate"][9];
+var dividendsForOneYear = stockData[company]["dividendrate"][9];
 $('#totalcash').html(dividendsForOneYear);
 
 $("#currentBookValue").html(currentBookValue);
 
 var year=10;
-var r=1.71; // update this
+var r=3; // update this
 
 $("#currentnote").html(r);
 
