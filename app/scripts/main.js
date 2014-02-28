@@ -86,3 +86,16 @@ function calculateIntrinsicValue() {
 calculateIntrinsicValue();
 
 
+                    var svg = dimple.newSvg("#chartContainer", 630, 400);
+                    d3.tsv("/data/example_data.tsv", function (data) {
+
+                        var myChart = new dimple.chart(svg, data);
+                        myChart.setBounds(60, 30, 615, 305);
+                        var x = myChart.addCategoryAxis("x", "Year");
+                        x.addOrderRule("Year");
+                        myChart.addMeasureAxis("y", "Book Value");
+                        var s = myChart.addSeries(null, dimple.plot.line);
+                        myChart.draw();
+                    });
+
+
