@@ -24,58 +24,65 @@ var stockData = {
     }
 };
 
-var tableObject = { tableStuff: []};
+function calculateIntrinsicValue() {
 
-_(10).times(function(n){
-    var year = stockData[company]["yearretrieved"][0]+n;
-    var eps = stockData[company]["eps"][n];
-    var bookvalue = stockData[company]["bookvalue"][n];
-    var dividendrate = stockData[company]["dividendrate"][n];
-    var datarow = {'year': year, 'eps': eps, 'bookvalue': bookvalue, 'dividendrate': dividendrate, 'index': n+1}
-    //console.log(year+'|'+bookvalue+'|'+dividendrate);
-    tableObject.tableStuff.push(datarow);
-});
+    var tableObject = { tableStuff: []};
 
-var template = "{{#tableStuff}}<tr><td>{{year}}</td><td><input id='eps{{index}}' type='text' value='{{eps}}'></td><td><input id='bookvalue{{index}}' type='text' value='{{bookvalue}}'></td><td><input id='dividendrate{{index}}' type='text' value='{{dividendrate}}'></td></tr>{{/tableStuff}}";
+    _(10).times(function(n){
+        var year = stockData[company]["yearretrieved"][0]+n;
+        var eps = stockData[company]["eps"][n];
+        var bookvalue = stockData[company]["bookvalue"][n];
+        var dividendrate = stockData[company]["dividendrate"][n];
+        var datarow = {'year': year, 'eps': eps, 'bookvalue': bookvalue, 'dividendrate': dividendrate, 'index': n+1}
+        //console.log(year+'|'+bookvalue+'|'+dividendrate);
+        tableObject.tableStuff.push(datarow);
+    });
 
-document.getElementById('tableId').innerHTML = Mustache.render(template, tableObject);
+    var template = "{{#tableStuff}}<tr><td>{{year}}</td><td><input id='eps{{index}}' type='text' value='{{eps}}'></td><td><input id='bookvalue{{index}}' type='text' value='{{bookvalue}}'></td><td><input id='dividendrate{{index}}' type='text' value='{{dividendrate}}'></td></tr>{{/tableStuff}}";
 
-var epssum = sumEarningsPerShare(_.rest(stockData[company]["eps"]), false);
+    document.getElementById('tableId').innerHTML = Mustache.render(template, tableObject);
 
-$('#epssum').html(epssum);
+    var epssum = sumEarningsPerShare(_.rest(stockData[company]["eps"]), false);
 
-var divsum = sumEarningsPerShare(_.rest(stockData[company]["dividendrate"]), false);
+    $('#epssum').html(epssum);
 
-$('#divsum').html(divsum);
+    var divsum = sumEarningsPerShare(_.rest(stockData[company]["dividendrate"]), false);
 
-var currentBookValue = stockData[company]["bookvalue"][9];
-var oldBookValue = stockData[company]["bookvalue"][0];
+    $('#divsum').html(divsum);
 
-var yearsBetweenBookValues = 9;
+    var currentBookValue = stockData[company]["bookvalue"][9];
+    var oldBookValue = stockData[company]["bookvalue"][0];
 
-var bookvaluepercentagechange = getAverageBookValueChange(currentBookValue, oldBookValue, yearsBetweenBookValues);
-$('#averageBookValueChange').html(bookvaluepercentagechange);
+    var yearsBetweenBookValues = 9;
 
-var bookvaluedifference = currentBookValue - oldBookValue;
-var bookvaluedifferencefloat = bookvaluedifference
+    var bookvaluepercentagechange = getAverageBookValueChange(currentBookValue, oldBookValue, yearsBetweenBookValues);
+    $('#averageBookValueChange').html(bookvaluepercentagechange);
 
-$('#bookvaluediff').html(bookvaluedifferencefloat);
+    var bookvaluedifference = currentBookValue - oldBookValue;
+    var bookvaluedifferencefloat = bookvaluedifference
 
-var total = bookvaluedifferencefloat + divsum;
-$("#totalcashsum").html(total);
+    $('#bookvaluediff').html(bookvaluedifferencefloat);
 
-var dividendsForOneYear = stockData[company]["dividendrate"][9];
-$('#totalcash').html(dividendsForOneYear);
+    var total = bookvaluedifferencefloat + divsum;
+    $("#totalcashsum").html(total);
 
-$("#currentBookValue").html(currentBookValue);
+    var dividendsForOneYear = stockData[company]["dividendrate"][9];
+    $('#totalcash').html(dividendsForOneYear);
 
-var year=10;
-var r=1.71; // update this
+    $("#currentBookValue").html(currentBookValue);
 
-$("#currentnote").html(r);
+    var year=10;
+    var r=1.71; // update this
 
-var YEARSBETWEENBOOKVALUES = 9;
-var bookValuePercentageChange =  getAverageBookValueChange(currentBookValue, oldBookValue, YEARSBETWEENBOOKVALUES);
+    $("#currentnote").html(r);
 
-$('#intrinsicValue').html(getIntrinsicValue(dividendsForOneYear, currentBookValue, bookValuePercentageChange, year, r  ));
+    var YEARSBETWEENBOOKVALUES = 9;
+    var bookValuePercentageChange =  getAverageBookValueChange(currentBookValue, oldBookValue, YEARSBETWEENBOOKVALUES);
+
+    $('#intrinsicValue').html(getIntrinsicValue(dividendsForOneYear, currentBookValue, bookValuePercentageChange, year, r  ));
+
+}
+
+calculateIntrinsicValue();
+
 
