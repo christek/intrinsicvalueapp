@@ -1,9 +1,3 @@
-describe("general functions", function() {
-    it("should return a", function() {
-        expect(returnSomething()).toBe('a');
-    });
-});
-
 describe("earnings per share sum", function() {
     it("should correctly sum plain integers as default behavior", function() {
         expect(sumEarningsPerShare([1,2])).toBe(3.00);
