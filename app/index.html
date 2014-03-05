@@ -1,108 +1,109 @@
 <!doctype html>
 <!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>intrinsicvalueapp</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/mine.css">
-    <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-</head>
-<body>
+    <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>intrinsicvalueapp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/mine.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
-<![endif]-->
+    <![endif]-->
 
 
-<div class="container">
-    <div class="header">
-        <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Intrinsic Value App</h3>
-    </div>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h3 class="text-muted">Intrinsic Value App</h3>
+        </div>
 
-    <div class="row marketing">
-        <div class="col-lg-6">
+        <div class="row marketing">
+            <div class="col-lg-6">
+
+                <h1 class="companyName"></h1>
+                <div id="chartContainer">
+
+                </div>
+
+                <p>The table below shows the corresponding last 10 year's financial information for <span class="companyName"></span>.</p>
 
 
-            <div id="chartContainer">
-   
-            </div>
 
-            <p>Use the table below to enter in the corresponding values for Disney.</p>
+                <table class="table table-bordered">
+                    <tr>
+                        <th></th>
+                        <th>Earnings Per Share</th>
+                        <th>Book Value / Share</th>
+                        <th>Dividend Rate</th>
 
+                    </tr>
+                    <tbody id="tableId"></tbody>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>$ total EPS</td>
+                            <td>$ change in book value</td>
+                            <td>$ total dividends</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td id="epssum" class="danger"></td>
+                            <td id="bookvaluediff" class="warning"></td>
+                            <td id="divsum" class="warning"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total Cash taken out of business</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="totalcashsum" class="success"></td>
+                        </tr>
 
-            <table class="table table-bordered">
-                <tr>
-                    <th></th>
-                    <th>EPS</th>
-                    <th>Book Value / Share</th>
-                    <th>Dividend Rate</th>
+                    </tbody>
+                </table>
 
-                </tr>
-                <tbody id="tableId"></tbody>
-                <tbody>
-                <tr>
-                    <td></td>
-                    <td>$ total EPS</td>
-                    <td>$ change in book value</td>
-                    <td>$ total dividends</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td id="epssum" class="danger" style="border: 2px solid green;"></td>
-                    <td id="bookvaluediff" class="warning"></td>
-                    <td id="divsum" class="warning" style="border: 2px solid green;"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Total Cash taken out of business</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td id="totalcashsum" class="success" style="border: 2px solid green;"></td>
-                </tr>
-
-                </tbody>
-            </table>
-
-            <div style="border: 1px solid green;">
-                <p>Cash taken out of business (dividends for one year): $<span id="totalcash"></span></p>
-                <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
-                <p>Current book value: $<span id="currentBookValue"></span></p>
-                <p>Current 10 year note: <span id="currentnote"></span>%</p>
+                <div>
+                    <p>Cash taken out of business (dividends for one year): $<span id="totalcash"></span></p>
+                    <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
+                    <p>Current book value: $<span id="currentBookValue"></span></p>
+                    <p>Current 10 year note (if you buy this stock at its intrinsic value, you can expect to get an annual return of this amount): <span id="currentnote"></span>%</p>
                 <!--
                 <input type="range" name="points" min="0" max="20">
-                -->
-                <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p></div>
+            -->
+            <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p></div>
         </div>
 
     </div>
 
     <div class="footer">
-        <p>I ♥ value investing - should be 40.44</p>
+        <p>I ♥ value investing</p>
     </div>
 
 </div>
@@ -123,9 +124,9 @@
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
         b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
         b[l].l = +new Date;
         e = o.createElement(i);
         r = o.getElementsByTagName(i)[0];
@@ -137,7 +138,7 @@
 </script>
 
 <!-- build:js scripts/main.js -->
-<script src="scripts/data.json"></script>
+<script src="scripts/data.js"></script>
 <script src="scripts/util.js"></script>
 <script src="scripts/main.js"></script>
 <!-- endbuild -->

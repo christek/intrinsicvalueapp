@@ -1,27 +1,3 @@
-var stockData = {
-    "DIS": {
-        "fullname": "Disney",
-        "yearretrieved": [2002],
-        "eps": ["NA", .65, 1.11, 1.19, 1.60, 2.24, 2.28, 1.76, 2.03, 2.52],
-        "bookvalue": [11.61, 11.82, 13.05, 13.06, 15.42, 15.67, 17.73, 18.55, 19.78, 21.21],
-        "dividendrate": ["NA", .21, .24, .27, .31, .35, .35, .35, .40, .60]
-    },
-    "WMK": {
-        "fullname": "Weiss Markets",
-        "yearretrieved": [2002],
-        "eps": ["NA", 2.11, 2.35, 2.07, 1.89, 1.74, 2.33, 2.54, 2.81, 3.07],
-        "bookvalue": [21.11, 22.35, 23.29, 24.02, 24.52, 25.68, 27.07, 27.73, 29.58, 29.58],
-        "dividendrate": ["NA", 1.20, 1.20, 1.20, 1.20, 1.20, 1.20, 1.20, 1.20, 1.20]
-    },
-    "WFC": {
-        "fullname": "Wells Fargo",
-        "yearretrieved": [2012],
-        "eps": ["NA", 2.82, 2.21, 1.75, 0.70, 2.38, 2.49, 2.25, 2.05, 1.83],
-        "bookvalue": [21.11, 22.35, 23.29, 24.02, 24.52, 25.68, 27.07, 27.73, 29.58, 29.58],
-        "dividendrate": ["NA", 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66, 0.66]
-    }
-};
-
 var chartData = [];
 
 function generateChart(chartData) {
@@ -41,7 +17,7 @@ function calculateIntrinsicValue(ticker) {
 
     _(10).times(function(n){
 
-        var year = stockData[ticker]["yearretrieved"][0]+n;
+        var year = stockData[ticker]["firstyearretrieved"][0]+n;
         var eps = stockData[ticker]["eps"][n];
         var bookvalue = stockData[ticker]["bookvalue"][n];
         var dividendrate = stockData[ticker]["dividendrate"][n];
@@ -85,7 +61,8 @@ function calculateIntrinsicValue(ticker) {
     $("#currentBookValue").html(currentBookValue);
 
     var year=10;
-    var r=1.71; // update this
+    //var r=18; // update this
+    var r=2.65; // update this
 
     $("#currentnote").html(r);
 
@@ -94,9 +71,11 @@ function calculateIntrinsicValue(ticker) {
 
     $('#intrinsicValue').html(getIntrinsicValue(dividendsForOneYear, currentBookValue, bookValuePercentageChange, year, r  ));
 
+    $('.companyName').html(stockData[ticker]["fullname"])
+
 }
 
-calculateIntrinsicValue("DIS");
+calculateIntrinsicValue("WFC");
 generateChart(chartData);
 
 
