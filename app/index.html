@@ -40,13 +40,13 @@
         </div>
 
         <div class="row marketing">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
 
                 <h1 class="companyName"></h1>
                 <div id="chartContainer">
 
                 </div>
-
+                <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
                 <p>The table below shows the corresponding last 10 year's financial information for <span class="companyName"></span>.</p>
 
 
@@ -57,7 +57,6 @@
                         <th>Earnings Per Share</th>
                         <th>Book Value / Share</th>
                         <th>Dividend Rate</th>
-
                     </tr>
                     <tbody id="tableId"></tbody>
                     <tbody>
@@ -85,26 +84,35 @@
                             <td></td>
                             <td id="totalcashsum" class="success"></td>
                         </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="3">
+                            <div id="currentNote">
+Current 10 year note: <input id="rate" type="text" />%
 
-                    </tbody>
-                </table>
+                            </div>
 
-                <div>
-                    <p>Cash taken out of business (dividends for one year): $<span id="totalcash"></span></p>
-                    <p>Average book value change in the last 9 years: <span id="averageBookValueChange"></span>%</p>
-                    <p>Current book value: $<span id="currentBookValue"></span></p>
-                    <p>Current 10 year note (if you buy this stock at its intrinsic value, you can expect to get an annual return of this amount): <span id="currentnote"></span>%</p>
-                <!--
-                <input type="range" name="points" min="0" max="20">
-            -->
-            <p><strong>Intrinsic Value: <span id="intrinsicValue"></span></strong></p></div>
+
+                                      <div>Desired yearly return: 0<input id="sliderrate" type="range" name="points" min="1" max="40" step="0.05" style="width: 400px">40</div>
+                            </tr>
+                        </tbody>
+           </table>
+
+                    <div>
+                        <p style="font-size: 30px;"><strong><span class="intrinsicValText">Intrinsic Value</span>: $<span class="intrinsicValue"></span></strong></p>
+                        <!--<p>Cash taken out of business (dividends for one year): $<span id="totalcash"></span></p>-->
+                        <!--<p>Current book value: $<span id="currentBookValue"></span></p>-->
+                        <p>If you buy this stock at a price of $<span class="intrinsicValue"></span> per share,<br>you can expect to get an annual return of about <span class="currentnote"></span>% <span class="currentNoteMsg">(Current 10 year note)</span></p>
+                        <span class="bondMsg">a 10 year note bond would be a better investment</span>
+
         </div>
-
     </div>
 
-    <div class="footer">
-        <p>I ♥ value investing</p>
-    </div>
+</div>
+
+<div class="footer">
+    <p>I ♥ value investing</p>
+</div>
 
 </div>
 

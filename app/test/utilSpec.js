@@ -29,3 +29,17 @@ describe("intrinsic value calculator", function() {
     });
 });
 
+describe("jquery val function", function() {
+    var fixture = $('<input value="3.232323" />');
+    it("should correctly pull string from text input field", function() {  
+        var myString = $(fixture).val();    
+        expect(myString).toBe('3.232323');
+    });
+    it("should correctly pull string from text input field and parsInt", function() {
+        var fixture = $('<input id="rate" type="text" value="3.232323" />');
+        var myString = $(fixture).val();  
+        var myNumber = parseFloat(myString); 
+        expect(myNumber).toEqual(3.232323);
+    });    
+});
+

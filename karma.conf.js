@@ -14,15 +14,16 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'app/bower_components/underscore/underscore.js',
-      'app/scripts/util.js',
-      'app/test/*Spec.js'
+    'app/bower_components/underscore/underscore.js',
+    'app/bower_components/jquery/jquery.js',
+    'app/scripts/util.js',
+    'app/test/*Spec.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-      
+
     ],
 
 
@@ -68,5 +69,5 @@ module.exports = function(config) {
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
     singleRun: false
-  });
+});
 };
