@@ -1,0 +1,645 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"b",
+				"border-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 3909,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/data.js",
+			"settings":
+			{
+				"buffer_size": 1380,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/util.js",
+			"settings":
+			{
+				"buffer_size": 1468,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeLinter:\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text 3.\n  \n                   * * * IMPORTANT! * * *\n  \n          SublimeLinter 3 is NOT a drop-in replacement for\n          earlier versions.\n  \n          Linters *NOT* included with SublimeLinter 3, they\n          must be installed separately.\n  \n          Settings are different.\n  \n                  * * * READ THE DOCS! * * *\n  \n  Otherwise you will never know how to install linters, nor will\n  you know about all of the great new features in SublimeLinter 3.\n  \n  For complete documentation on how to install and use SublimeLinter,\n  please see:\n  \n  http://sublimelinter.readthedocs.org\n  \n  \n                   _   _      _       _\n                  | | | | ___| |_ __ | |\n                  | |_| |/ _ \\ | '_ \\| |\n                  |  _  |  __/ | |_) |_|\n                  |_| |_|\\___|_| .__/(_)\n                               |_|\n  \n  \n  I spent hundreds of hours writing and documenting SublimeLinter\n  to make it the best it can be — easy to use, easy to configure,\n  easy to update, easy to extend. If you use SublimeLinter and feel\n  it is making your coding life better and easier, please consider\n  making a donation to help fund development and support.\n  \n  To donate: https://github.com/SublimeLinter/SublimeLinter3#share-the-love\n  \n  Thank you!\n  \n",
+			"settings":
+			{
+				"buffer_size": 1744,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"te",
+				"TernJS: Jump to definition"
+			],
+			[
+				"ternJS",
+				"TernJS: Rename variable"
+			],
+			[
+				"tern",
+				"TernJS: Jump to definition"
+			],
+			[
+				"ter",
+				"TernJS: Next Occurance"
+			],
+			[
+				"js",
+				"TernJS: Next Occurance"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Discover Packages"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"jh",
+				"JSHint"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"gut",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"gutter",
+				"GutterColor: Clear Cache"
+			],
+			[
+				"g",
+				"GutterColor: Clear Cache"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"sassb",
+				"SassBeautify"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Add Repository"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"syn",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 390.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Runtime/JobStatus.cs",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Runtime/JobFactory.cs",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Logging/LogInitializer.cs",
+		"/C/work/OneABBNewTFS/Trunk/Projects/packages/EntityFramework.5.0.0/tools/init.ps1",
+		"/C/work/OneABBNewTFS/Trunk/Projects/ProductImport.Data/Service/IProductNodeImportService.cs",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Web/Utilities/Dao/IpNetwork.cs",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Runtime/Install.sql",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/responsive.css",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Migrations/Properties/Resources.resx",
+		"/C/work/OneABBNewTFS/Trunk/README.md",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Web/Global.asax",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Core/Data/Migrations/Release 2013-07-26/spAbbSelectChildCats.sql",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.WebTest/Abb.Portal.WebTest/WebDriver/Frontend/SliderAutomation.cs",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/Silverlight.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/_tables.scss",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Logging/.sass-cache/3a68646ff215a500d80c1528ce9b7ec3e78c6111/_themedElements.scssc",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/packages/Microsoft.Net.Http.2.0.20710.0/lib/net45/_._",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/_globalSpecifications.scss",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Logging/.sass-cache/9140c8a348eac7d6ac009c90929953dedec28d40/_globalSpecifications.scssc",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Themes/Blue/Global/blue.scss",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/global.scss",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Web/GlobalSuppressions.cs",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Tests/GlobalSuppressions.cs",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Runtime/Scheduler/GenericListener.cs",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery-linkSectionNav.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/WebAdmin/js/jquery-1.10.2.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/WebAdmin/js/jquery.min.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery.lazyload.js",
+		"/C/Users/PLCHTOK/Desktop/10min demo/example-jquery-cdn-master/example-jquery-cdn-master/www/js/app.js",
+		"/C/Users/PLCHTOK/Desktop/async.js",
+		"/C/Users/PLCHTOK/Desktop/performancerecommendations.md",
+		"/C/Users/PLCHTOK/Desktop/index.html",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/Logs/General.log",
+		"/C/work/OneABBNewTFS/Trunk/$tf/11/b415982b-ee1e-41cd-ae0a-79a3faca25b7.gz",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/_flyoutmenu.scss",
+		"/C/work/OneABBNewTFS/Trunk/Projects/WebAdmin/Bootstrapper.cs",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Web/Configuration/SetAbbOneServicesLocalConfig.bat",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Web/Services/GetActivityStatusService.cs",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Web/App_Start/FilterConfig.cs",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/requirejs-libs/image-gallery/jquery.imageGallery.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/Mvc/Views/GeneralSelector/Partials/MasterView.cshtml",
+		"/C/work/OneABBNewTFS/Trunk/Abb.One.Services/Abb.One.Services.Runtime/Jobs/MasterDataSynchronizer/MasterDataSynchronizer.cs",
+		"/C/work/OneABBNewTFS/Trunk/Lib/ThirdParty/Microsoft.WindowsAzure.ServiceRuntime.xml",
+		"/C/work/OneABBNewTFS/Trunk/Lib/ThirdParty/Microsoft.WindowsAzure.Diagnostics.xml",
+		"/C/work/OneABBNewTFS/Trunk/Lib/ThirdParty/MbUnit.xml",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/Global.asax",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/_abb.ask.scss",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/User/GutterColor.sublime-settings",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/_abb.contactus.scss",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Master/Abb.Master",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/.editorconfig",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/imagerotator.scss",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Themes/BlueGreen/Global/bluegreen.css",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Themes/Blue/Global/blue.css",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery-flyoutmenu.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery.productselector.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery-tab.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Styles/_socialimages.scss",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery-newstiles.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery-productimport.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery-productimportchanges.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/Sitefinity/WebsiteTemplates/AbbBranding/App_Scripts/jquery-customselect.js",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/Configuration/SetAbbComWebConfigLocalWithSts.bat",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/Configuration/SetAbbComWebConfigLocalhost.bat",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/Configuration/SetAbbComWebConfigLocal.bat",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/PLCHTOK/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Mockups/css/global.css",
+		"/C/work/OneABBNewTFS/Trunk/Projects/Abb.Portal.Web/App_Data/GeoLocation/GeoLiteCity.dat",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/Gruntfile.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/node_modules/karma/node_modules/log4js/test/global-log-level-test.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/node_modules/grunt/node_modules/glob/glob.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/shelljs/global.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/node_modules/grunt-contrib-watch/node_modules/gaze/node_modules/globule/node_modules/lodash/dist/lodash.underscore.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/index.html",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/scripts/main.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.editorconfig",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/karma.conf.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/scripts/.editorconfig",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.gitignore",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.jshintrc",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.gitattributes",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.bowerrc",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/d3/CONTRIBUTING.md",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/d3/d3.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/d3/composer.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/d3/bower.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/d3/.bower.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/README.md",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/package.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/LICENSE",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/index.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/index.html",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/CONTRIBUTING.md",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/component.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/CNAME",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/bower.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/backbone.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/.npmignore",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/.gitignore",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/bower_components/backbone/.bower.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/robots.txt",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/404.html",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/.htaccess",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.tmp/styles/mine.css",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.tmp/styles/main.css",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/scopes/scope_settings.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/inspectionProfiles/Project_Default.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/inspectionProfiles/profiles_settings.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/dictionaries/PLCHTOK.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/workspace.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/vcs.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/modules.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/misc.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/intrinsicvalueapp.iml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/encodings.xml",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/.idea/.name",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/package.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/bower.json",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/scripts/util.js",
+		"/C/Users/PLCHTOK/Documents/intrinsicvalueapp/app/test/utilSpec.js",
+		"/C/Users/PLCHTOK/Desktop/xdomain.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"jsli",
+			"\"",
+			"totalcashsum",
+			"pools",
+			"\"slider\"",
+			"getEnv",
+			"-o-linear-gradient",
+			"\"",
+			"shiv",
+			"followU",
+			"follow",
+			"images",
+			"pools",
+			"days",
+			"IndexModel",
+			"Hello",
+			"Hello, krakentest",
+			"images",
+			"jpegtra",
+			"images",
+			"opti",
+			"yearretrieved",
+			"jshint",
+			"\"",
+			"”",
+			"company",
+			"deleteme",
+			"returnSomething",
+			"layout8_",
+			"removeClass",
+			"removeC",
+			"remove",
+			"rightColumn2",
+			"leftColumn2",
+			"rightColumn2",
+			"leftColumn2",
+			"rightColumn",
+			"leftColumn",
+			"divs",
+			"tallerSide",
+			"greaterSide",
+			"rightSelector",
+			"leftSelector",
+			"idRightString",
+			"divsNumb",
+			"sideToExpand"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"rightColumnFound",
+			"leftColumnFound",
+			"rightColumn",
+			"leftColumn",
+			"rightColumn2",
+			"leftColumn2",
+			"tallerSideHeight",
+			"tallerSide",
+			"rightColumn",
+			"leftColumn",
+			"rightSelector",
+			"expThis"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/scripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1845,
+								1845
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/scripts/data.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/util.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1180,
+								1180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "intrinsicvalueapp.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"init",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Scripts\\init.js"
+			],
+			[
+				"responsive",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Styles\\responsive.scss"
+			],
+			[
+				"global.scss",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Styles\\global.scss"
+			],
+			[
+				"_tab",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Styles\\_tabs.scss"
+			],
+			[
+				"jquery-la",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Scripts\\requirejs-libs\\jquery-layout8_4.js"
+			],
+			[
+				"_fly",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Styles\\_flyoutmenu.scss"
+			],
+			[
+				"master",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Master\\Abb.Master"
+			],
+			[
+				"global.sc",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Styles\\global.scss"
+			],
+			[
+				"global.ssc",
+				"Projects\\Abb.Portal.Web\\App_Data\\Sitefinity\\WebsiteTemplates\\AbbBranding\\App_Styles\\global.scss"
+			],
+			[
+				"karma.conf.js",
+				"karma.conf.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 824.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

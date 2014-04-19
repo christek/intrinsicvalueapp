@@ -43,13 +43,15 @@ function calculateIntrinsicValue(ticker) {
 
   document.getElementById('tableId').innerHTML = Mustache.render(template, tableObject);
 
+  $('#eps1, #dividendrate1').attr('disabled', true)
+
   var epssum = sumEarningsPerShare(_.rest(stockData[ticker]['eps']), false);
 
-  $('#epssum').html(epssum);
+  $('#epssum').html('$' + epssum);
 
   var divsum = sumEarningsPerShare(_.rest(stockData[ticker]['dividendrate']), false);
 
-  $('#divsum').html(divsum);
+  $('#divsum').html('$' + divsum);
 
   var currentBookValue = stockData[ticker]['bookvalue'][9];
   var oldBookValue = stockData[ticker]['bookvalue'][0];
@@ -57,7 +59,10 @@ function calculateIntrinsicValue(ticker) {
   var yearsBetweenBookValues = 9;
 
   var bookvaluepercentagechange = getAverageBookValueChange(currentBookValue, oldBookValue, yearsBetweenBookValues);
-  $('#averageBookValueChange').html(bookvaluepercentagechange);
+
+  var bookValuePercentageChangeRounded = Math.round(bookvaluepercentagechange * 100) / 100;
+
+  $('#averageBookValueChange').html(bookValuePercentageChangeRounded);
 
   var bookvaluedifference = currentBookValue - oldBookValue;
   var bookvaluedifferencefloat = bookvaluedifference;
@@ -65,12 +70,15 @@ function calculateIntrinsicValue(ticker) {
   $('#bookvaluediff').html(bookvaluedifferencefloat);
 
   var total = bookvaluedifferencefloat + divsum;
-  $('#totalcashsum').html(total);
+
+  var totalRounded = Math.round(total * 100) / 100;
+
+  $('#totalcashsum').html('$' + totalRounded);
 
   var dividendsForOneYear = stockData[ticker]['dividendrate'][9];
   $('#totalcash').html(dividendsForOneYear);
 
-  $('#currentBookValue').html(currentBookValue);
+  $('#currentBookValue').html('$' + currentBookValue);
 
   var year = 10;
   var r = 2.74; // update this
@@ -79,6 +87,8 @@ function calculateIntrinsicValue(ticker) {
 
   var YEARSBETWEENBOOKVALUES = 9;
   var bookValuePercentageChange = getAverageBookValueChange(currentBookValue, oldBookValue, YEARSBETWEENBOOKVALUES);
+
+
 
   $('.intrinsicValue').html(getIntrinsicValue(dividendsForOneYear, currentBookValue, bookValuePercentageChange, year, r));
 
@@ -112,5 +122,5 @@ function calculateIntrinsicValue(ticker) {
 
 }
 
-calculateIntrinsicValue('DIS');
+calculateIntrinsicValue('NHC');
 generateChart(chartData);

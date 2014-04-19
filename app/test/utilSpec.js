@@ -31,15 +31,25 @@ describe("intrinsic value calculator", function() {
 
 describe("jquery val function", function() {
     var fixture = $('<input value="3.232323" />');
-    it("should correctly pull string from text input field", function() {  
-        var myString = $(fixture).val();    
+    it("should correctly pull string from text input field", function() {
+        var myString = $(fixture).val();
         expect(myString).toBe('3.232323');
     });
     it("should correctly pull string from text input field and parsInt", function() {
         var fixture = $('<input id="rate" type="text" value="3.232323" />');
-        var myString = $(fixture).val();  
-        var myNumber = parseFloat(myString); 
+        var myString = $(fixture).val();
+        var myNumber = parseFloat(myString);
         expect(myNumber).toEqual(3.232323);
-    });    
+    });
+});
+
+describe("rounding decimal places", function() {
+    it("should correctly round various decimal numbers", function() {
+        expect(Math.round(11.1111 * 100) / 100).toBe(11.11);
+        expect(Math.round(99 * 100) / 100).toBe(99);
+        expect(Math.round(99.99 * 100) / 100).toBe(99.99);
+        expect(Math.round(99.999 * 100) / 100).toBe(100);
+        expect(Math.round(3.129 * 100) / 100).toBe(3.13);
+    });
 });
 
